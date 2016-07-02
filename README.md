@@ -10,7 +10,7 @@ A REST call is used in order to retrieve the title of the document, if no Title 
 If your app contains many links it could affect the performance of your server
 
 #Example GIF
-![](http://g.recordit.co/ud7f2Aq8t4.gif)
+![](http://g.recordit.co/On8EYF5Lue.gif)
 
 #### License
 MIT
