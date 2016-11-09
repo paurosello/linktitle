@@ -10,7 +10,7 @@ frappe.ui.form.ControlLink = frappe.ui.form.ControlData.extend({
 
 		var me = this;
 		
-		if(typeof(this.value) !== 'undefined' && this.value!=""){
+		if(typeof(this.value) !== 'undefined' && this.value!=null && this.value!=""){
 			frappe.call({
 					method:"linktitle.routes.title_field",
 					args: {
@@ -36,7 +36,7 @@ frappe.ui.form.ControlLink = frappe.ui.form.ControlData.extend({
 		$('<div class="link-field ui-front" style="position: relative;">\
 			<input type="text" class="input-with-feedback form-control" autocomplete="off">\
 			<div class="title_div" style="display:none">\
-				<div style="display: inline-block; width: 90%;margin-top:5px">\
+				<div style="display: inline-block; width: 90%">\
 					<span class="title" style="font-weight: bold;"></span>\
 					<a style="color: grey; margin-left: 5px;" class="open_doc no-decoration" title="' + __("Open Link") + '"><i class="icon-link"></i></a>\
 				</div>\
